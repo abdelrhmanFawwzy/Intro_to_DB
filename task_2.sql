@@ -9,7 +9,7 @@ FOREIGN KEY (`author_id`) REFERENCES `Authors` (`author_id`)
 );
 
 CREATE TABLE `Authors` (
-`author_id` INT ,
+`author_id ` INT ,
 `author_name` VARCHAR(215),
 PRIMARY KEY (`author_id`)
 );
