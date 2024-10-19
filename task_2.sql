@@ -15,25 +15,24 @@ PRIMARY KEY (`author_id`)
 );
 
 CREATE TABLE `Customers` (
-`customer_id` INT ,
-`customer_name` VARCHAR(215),
-`email` VARCHAR(215),
-`address` TEXT,
+"customer_id ",
+"customer_name VARCHAR(215)",
+"email VARCHAR(215)",
+"address TEXT"
 PRIMARY KEY (`customer_id`)
 );
 
 CREATE TABLE `Orders` (
-`order_id` INT,
-`customer_id` INT,
-`order_date` DATE,
-FOREIGN KEY (`customer_id`) REFERENCES `Customers`(`customer_id`)
+"order_id INT",
+"customer_id INT", 
+"order_date DATE",
+"FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)"
+
 );
 
 CREATE TABLE `Order_Details` (
-`orderdetailid` INT,
-`order_id` INT,
-`book_id` INT,
-`quantity` DOUBLE,
-FOREIGN KEY (`order_id`) REFERENCES `Orders`(`customer_id`),
-FOREIGN KEY (`book_id`) REFERENCES `Books`(`author_id`)
+"book_id INT",
+"quantity DOUBLE",
+"FOREIGN KEY (order_id) REFERENCES Orders(order_id)", 
+"FOREIGN KEY (book_id) REFERENCES Books(book_id)"
 );
