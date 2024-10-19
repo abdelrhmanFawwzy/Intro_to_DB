@@ -1,4 +1,4 @@
-CREATE DATABASE `alx_book_store`;
+CREATE DATABASE IF NOT EXISTS alx_book_store;
 Create TABLE `Books` (
 `book_id` INT ,
 `title` VARCHAR(130),
