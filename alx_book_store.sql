@@ -16,10 +16,10 @@ PRIMARY KEY (`author_id`)
 );
 
 CREATE TABLE `Customers` (
-`customer_id` INT ,
-`customer_name` VARCHAR(215),
-`email` VARCHAR(215),
-`address` TEXT,
+"customer_id ",
+"customer_name VARCHAR(215)",
+"email VARCHAR(215)",
+"address TEXT"
 PRIMARY KEY (`customer_id`)
 );
 
